@@ -133,28 +133,6 @@ export function Home() {
             </div>
           </div>
         </section>
-
-        <section id="contact" className="contact section reveal">
-          <SectionLabel number="06" label="contact / reach out" />
-
-          <div className="contact__content">
-            <p className="eyebrow">available for projects</p>
-
-            <h2>Let's build something clear and useful.</h2>
-
-            <p>
-              You can contact me for software projects, internships or
-              collaboration.
-            </p>
-
-            <a
-              href="mailto:morsal881@gmail.com"
-              className="button button--primary"
-            >
-              Send email
-            </a>
-          </div>
-        </section>
       </main>
     </>
   );

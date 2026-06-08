@@ -2,31 +2,29 @@ import { useState } from "react";
 import "./DarkTechSection.css";
 import { SectionLabel } from "../SectionLabel/SectionLabel";
 
-const baseUrl = import.meta.env.BASE_URL;
-
 const darkTechImages = [
   {
-    src: `${baseUrl}images/darktech/port1.jpeg`,
+    src: "/portfolio/images/darktech/port1.jpeg",
     alt: "DarkTech expo setup with webcam and live tracking screen",
     caption: "Final expo setup with webcam and live tracking screen",
   },
   {
-    src: `${baseUrl}images/darktech/port2.jpeg`,
+    src: "/portfolio/images/darktech/port2.jpeg",
     alt: "Raspberry Pi 5 setup with camera and wiring",
     caption: "Raspberry Pi 5 setup with camera and wiring",
   },
   {
-    src: `${baseUrl}images/darktech/port3.jpeg`,
+    src: "/portfolio/images/darktech/port3.jpeg",
     alt: "Live coordinate output from the DarkTech tracker",
     caption: "Live X and Y coordinate output",
   },
   {
-    src: `${baseUrl}images/darktech/port4.jpeg`,
+    src: "/portfolio/images/darktech/port4.jpeg",
     alt: "CSV file with saved tracking data",
     caption: "CSV file with saved tracking data",
   },
   {
-    src: `${baseUrl}images/darktech/port5.jpeg`,
+    src: "/portfolio/images/darktech/port5.jpeg",
     alt: "MediaPipe body tracking during testing",
     caption: "MediaPipe body tracking during testing",
   },

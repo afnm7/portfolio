@@ -11,6 +11,8 @@ export function Home() {
   useScrollReveal();
   useSectionTheme("darktech", "dark-mode");
 
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <>
       <Navbar />
@@ -47,7 +49,7 @@ export function Home() {
 
           <div className="hero__image">
             <img
-              src="/images/profile/portfolio.jpeg"
+              src={`${baseUrl}images/profile/portfolio.jpeg`}
               alt="Afnaan Makhloufi"
               className="hero__profile-image"
             />

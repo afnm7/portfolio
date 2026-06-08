@@ -1,0 +1,21 @@
+.section-label {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  pointer-events: none;
+}
+
+.section-label span {
+  display: block;
+  color: var(--ghost);
+  font-size: clamp(48px, 8vw, 120px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section-label p {
+  margin-top: -10px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+}

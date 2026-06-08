@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --background: #f8f8f5;
+  --text: #171717;
+  --muted: #6f6f6f;
+  --border: #d8d8d2;
+  --ghost: rgba(0, 0, 0, 0.06);
+  --accent: #2563eb;
+
+  --sans: "Inter", system-ui, sans-serif;
+  --mono: "Space Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 20, 20, 0.035) 1px, transparent 1px),
+    var(--background);
+  background-size: 64px 64px;
+
+  color: var(--text);
+  font-family: var(--sans);
+
+  transition:
+    background 500ms ease,
+    color 500ms ease;
+}
+
+body.dark-mode {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    #07090f;
+  background-size: 64px 64px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+.darktech-image {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  display: block;
+}
